@@ -1,14 +1,19 @@
 <template>
     <div id="update">
-      <h3>수정폼</h3>
-      글번호: <input type="text" v-model="info.no" readonly><br/>
-      제목: <input type="text" v-model="info.title"><br/>
-      작성자: <input type="text" v-model="info.writer"><br/>
-      내용: <textarea cols="30" rows="10" v-model="info.content"></textarea><br/>
-      <b-button-group>
-        <b-button variant="success" @click="updatePost(info.no)">수정</b-button>
-        <b-button variant="success" @click="deletePost(info.no)">삭제</b-button>
-      </b-button-group>
+      <b-card
+        style="max-width: 30rem; margin: auto; margin-top: 10px;"
+        class="mb-2"
+        border-variant="info">
+          <h3>수정폼</h3>
+          글번호 <b-form-input type="text" v-model="info.no" readonly></b-form-input><br/>
+          제목 <b-form-input type="text" v-model="info.title" placeholder="title"></b-form-input><br/>
+          작성자 <b-form-input type="text" v-model="info.writer" placeholder="writer"></b-form-input><br/>
+          내용 <b-form-textarea cols="30" rows="5" v-model="info.content" placeholder="content"></b-form-textarea><br/>
+          <b-button-group>
+            <b-button  @click="updatePost(info.no)">수정</b-button>
+            <b-button  @click="deletePost(info.no)">삭제</b-button>
+          </b-button-group>
+      </b-card>
     </div> 
 </template>
 <script>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <h3>Posts</h3>       
-        <b-table hover :items="infos">
+        <b-table :bordered="bordered" hover :items="infos">
           <template #cell(no)="data">
             {{data.item.no}}
           </template>
@@ -68,7 +68,6 @@ export default {
 </script>
 
 <style>
-
 table{
 	margin : auto;
     width : 80%;
