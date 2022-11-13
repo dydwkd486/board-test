@@ -1,22 +1,22 @@
 <template>
     <div>
         <h3>글목록</h3>
-    <table>
-      <tr>
-        <th>글번호</th>
-        <th>제목</th>
-        <th>내용</th>
-        <th>작성자</th>
-        <th>작성일</th>
-      </tr>
-      <tr v-for="(info, index) in infos" :key="index">
-        <td>{{info.no}}</td>
-        <router-link :to="'/modify/'+info.no"><td>{{info.title}}</td></router-link>
-        <td>{{info.content}}</td>
-        <td>{{info.writer}}</td>
-        <td>{{info.regtime | transDate }}</td>
-      </tr>
-    </table>
+        <table>
+          <tr>
+            <th>글번호</th>
+            <th>제목</th>
+            <th>내용</th>
+            <th>작성자</th>
+            <th>작성일</th>
+          </tr>
+          <tr v-for="(info, index) in infos" :key="index">
+            <td>{{info.no}}</td>
+            <router-link :to="'/modify/'+info.no"><td>{{info.title}}</td></router-link>
+            <td>{{info.content}}</td>
+            <td>{{info.writer}}</td>
+            <td>{{info.regtime | transDate }}</td>
+          </tr>
+        </table>
     </div>
 </template>
 
@@ -62,3 +62,11 @@ export default {
       },
 }
 </script>
+
+<style>
+
+table{
+	margin : auto;
+    width : 80%;
+}
+</style>
