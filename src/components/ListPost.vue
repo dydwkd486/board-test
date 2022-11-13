@@ -1,22 +1,26 @@
 <template>
     <div>
-        <h3>글목록</h3>
-        <table>
-          <tr>
-            <th>글번호</th>
-            <th>제목</th>
-            <th>내용</th>
-            <th>작성자</th>
-            <th>작성일</th>
-          </tr>
-          <tr v-for="(info, index) in infos" :key="index">
-            <td>{{info.no}}</td>
-            <router-link :to="'/modify/'+info.no"><td>{{info.title}}</td></router-link>
-            <td>{{info.content}}</td>
-            <td>{{info.writer}}</td>
-            <td>{{info.regtime | transDate }}</td>
-          </tr>
-        </table>
+        <h3>Posts</h3>       
+        <b-table hover :items="infos">
+          <template #cell(no)="data">
+            {{data.item.no}}
+          </template>
+          <template #cell(title)="data">
+              <router-link :to="'/modify/'+data.item.no">
+                {{data.item.title}}
+              </router-link>
+            </template>
+          <template #cell(content)="data">
+              {{data.item.content}}
+          </template>
+          <template #cell(writer)="data">
+              {{data.item.writer}}
+          </template>
+          <template #cell(regtime)="data">
+              {{data.item.regtime | transDate}}
+          </template>
+          <!-- additional table slots here if needed -->
+        </b-table>
     </div>
 </template>
 

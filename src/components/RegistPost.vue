@@ -35,6 +35,7 @@ export default {
                     .then(( respData)=>{ console.log(respData);
                         if(respData.status == 200){
                             alert('글 등록 성공')
+                            this.$router.push("/board");
                         }
                     })
                     .catch((err)=>{console.log(err)})

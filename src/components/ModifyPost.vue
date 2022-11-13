@@ -5,8 +5,10 @@
       제목: <input type="text" v-model="info.title"><br/>
       작성자: <input type="text" v-model="info.writer"><br/>
       내용: <textarea cols="30" rows="10" v-model="info.content"></textarea><br/>
-      <button @click="updatePost(info.no)">수정</button>
-      <button @click="deletePost(info.no)">삭제</button>
+      <b-button-group>
+        <b-button variant="success" @click="updatePost(info.no)">수정</b-button>
+        <b-button variant="success" @click="deletePost(info.no)">삭제</b-button>
+      </b-button-group>
     </div> 
 </template>
 <script>
