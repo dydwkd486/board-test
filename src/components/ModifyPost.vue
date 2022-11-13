@@ -1,6 +1,5 @@
 <template>
     <div id="update">
-      <hr color="red">
       <h3>수정폼</h3>
       글번호: <input type="text" v-model="info.no" readonly><br/>
       제목: <input type="text" v-model="info.title"><br/>

@@ -1,8 +1,6 @@
 <template>
-  <div class="about">
-    <router-link to="/regist"><b-button variant="primary">등록</b-button></router-link>
-    <router-view/>
-    <h3>글목록</h3>
+    <div>
+        <h3>글목록</h3>
     <table>
       <tr>
         <th>글번호</th>
@@ -19,7 +17,7 @@
         <td>{{info.regtime | transDate }}</td>
       </tr>
     </table>
-  </div>
+    </div>
 </template>
 
 <script>
@@ -36,7 +34,7 @@ export default {
           },
         }
       },
-  created(){
+      created(){
     const addr = "http://localhost:9999/vue/api/board";
     // axios 요청 (Spring Boot Rest API 참고)
     axios({
@@ -48,7 +46,8 @@ export default {
           console.log(error);
         }).finally()
   },
-        filters:{
+
+    filters:{
         transDate: function(regtime){
           if(!regtime)return ''; 
           let js_date = new Date(regtime);
