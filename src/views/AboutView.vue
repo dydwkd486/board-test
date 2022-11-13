@@ -3,7 +3,7 @@
         <p>
       <a href="https://github.com/dydwkd486">용장</a>, 
       <a href="https://github.com/yu-so-young2">소영</a>, 
-      <a href="https://github.com/yu-so-young2">신희</a>
+      <a href="https://github.com/bobsini601">신희</a>
       
     </p>
 

@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import HomeView from '@/views/HomeView.vue'
 import BoardView from '@/views/BoardView'
 import AboutView from '@/views/AboutView'
+
 import ListPost from '@/components/ListPost'
 import RegistPost from '@/components/RegistPost'
 import ModifyPost from '@/components/ModifyPost'
