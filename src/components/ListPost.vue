@@ -34,8 +34,9 @@ export default {
           info:{
           title:"",
           writer:"",
-          content:"",  
+          content:"",
           },
+          bordered: true,
         }
       },
       created(){

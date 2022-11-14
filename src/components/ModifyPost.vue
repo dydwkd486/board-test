@@ -53,7 +53,7 @@ export default {
             console.log(respData);
             if(respData.status==200){
               alert("글 수정 성공");
-              this.reloadData();
+              this.$router.push("/board");
             }
           }).catch((error)=>{
             console.log(error);
@@ -68,7 +68,6 @@ export default {
             console.log(respData);
             if(respData.status==200){
               alert("글 삭제 성공");
-              this.reloadData();
               this.$router.push("/board");
             }
           }).catch((error)=>{
