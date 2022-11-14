@@ -3,7 +3,7 @@
 
         <b-card
         title="조용장"
-        img-src="https://picsum.photos/600/300/?image=25"
+        img-src="https://avatars.githubusercontent.com/u/22496079?v=4"
         img-alt="Image"
         img-top
         tag="article"
@@ -33,7 +33,7 @@
 
       <b-card
         title="박신희"
-        img-src="https://picsum.photos/600/300/?image=25"
+        img-src="https://avatars.githubusercontent.com/u/52345499?v=4"
         img-alt="Image"
         img-top
         tag="article"
@@ -41,7 +41,7 @@
         class="mb-2"
         >
         <b-card-text>
-          열심히는 하는 개발자
+          신이나는 개발자 🎶
         </b-card-text>
         <b-button href="https://github.com/bobsini601" >Github</b-button>  
       </b-card>
