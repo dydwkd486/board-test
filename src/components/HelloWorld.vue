@@ -36,4 +36,7 @@ li {
 a {
   color: #42b983;
 }
+h1:hover{
+  color: #cf9b0c;
+}
 </style>
