@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-
+      <b-card-group deck>
         <b-card
         title="조용장"
         img-src="https://avatars.githubusercontent.com/u/22496079?v=4"
@@ -18,15 +18,16 @@
     
       <b-card
         title="유소영"
-        img-src="https://picsum.photos/600/300/?image=25"
+        img-src="https://www.ssalba.co.kr/wys2/file_attach/2019/01/31/1548912277-62.jpg"
         img-alt="Image"
+        img-height="318px"
         img-top
         tag="article"
         style="max-width: 20rem;"
         class="mb-2"
         >
         <b-card-text>
-          커여운 개발자
+          꾸준히 성장하는 개발자 ☘
         </b-card-text>
         <b-button href="https://github.com/yu-so-young2" >Github</b-button>  
       </b-card>
@@ -45,7 +46,7 @@
         </b-card-text>
         <b-button href="https://github.com/bobsini601" >Github</b-button>  
       </b-card>
-
+    </b-card-group>
     </div>
   </template>
   
