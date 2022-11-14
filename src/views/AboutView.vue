@@ -12,7 +12,7 @@
         class="mb-2"
         >
         <b-card-text>
-          조용하지 않은 개발자
+          조용하지 않은 개발자 🙋‍♂️
         </b-card-text>
         <b-button href="https://github.com/dydwkd486" >Github</b-button>  
       </b-card>

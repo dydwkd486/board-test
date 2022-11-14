@@ -1,7 +1,7 @@
 <template>
     <div>
         <h3>Posts</h3>       
-        <b-table :bordered="bordered" hover :items="infos">
+        <b-table striped :bordered="bordered" hover :items="infos">
           <template #cell(no)="data">
             {{data.item.no}}
           </template>
