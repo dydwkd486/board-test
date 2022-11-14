@@ -3,8 +3,9 @@
       <b-card-group deck>
         <b-card
         title="조용장"
-        img-src="https://avatars.githubusercontent.com/u/22496079?v=4"
+        :img-src="require('../assets/yongjang.png')"
         img-alt="Image"
+        img-height="220px"
         img-top
         tag="article"
         style="max-width: 20rem;"
@@ -20,7 +21,7 @@
         title="유소영"
         img-src="https://www.ssalba.co.kr/wys2/file_attach/2019/01/31/1548912277-62.jpg"
         img-alt="Image"
-        img-height="318px"
+        img-height="220px"
         img-top
         tag="article"
         style="max-width: 20rem;"
@@ -38,6 +39,7 @@
         img-alt="Image"
         img-top
         tag="article"
+        img-height="220px"
         style="max-width: 20rem;"
         class="mb-2"
         >
