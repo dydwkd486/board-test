@@ -33,6 +33,21 @@ values('ssafy', 'Vue Axios 연동', 'Vue를 이용한 HTTP 통신'),
       ('ssafy', 'Vue를 배워봅시다', 'Vue와 Spring을 연동하자~'),
       ('ssafy', '프론트엔드 프레임워크', 'Vue는 프론트엔드의 인기있는 프레임워크 입니다.');
 
+CREATE TABLE vue_qna (
+  no int NOT NULL AUTO_INCREMENT,
+  writer varchar(20) NOT NULL,
+  title varchar(100) NOT NULL,
+  content varchar(2000) NOT NULL,
+  regtime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (no),
+  CONSTRAINT vue_qna_to_user_fk FOREIGN KEY (writer) REFERENCES vue_user (user_id)
+); 
+
+insert into vue_qna(writer, title, content) 
+values('ssafy', '오늘 점심 메뉴는 뭔가요?', '도와줘 점심봇~'), 
+      ('ssafy', '이게 왜 되나요', '왜지...'),
+      ('ssafy', '404 error가 뜹니다', '응애 나 아기 개발자');
+
 commit;
 
 select * from vue_board;
